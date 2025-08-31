@@ -9,6 +9,7 @@ import { HabitsProvider } from "@/contexts/habits-context"
 import { Suspense } from "react"
 import { Navigation } from "@/components/navigation"
 import "./globals.css"
+import Footer from "@/components/footer"
 
 export const metadata: Metadata = {
   title: "HabitFlow - Track Your Daily Habits",
@@ -35,6 +36,7 @@ export default function RootLayout({
           </ThemeProvider>
         </Suspense>
         {/* <Analytics /> */}
+        <Footer />
       </body>
     </html>
   )
